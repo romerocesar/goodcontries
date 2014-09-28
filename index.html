@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Good Countries</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron" id="map" style="height: 600px"/>
+    </div>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/topojson/topojson.js"></script>
+    <script src="bower_components/datamaps/dist/datamaps.world.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script>
+     angular.element(document).ready(function(){
+       var basic = new Datamap({
+         element: document.getElementById('map')
+       });
+     });
+    </script>
+  </body>
+</html>
